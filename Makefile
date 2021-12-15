@@ -112,6 +112,7 @@ include imu/imu.mk
 include lora/lora.mk
 include compression/compression.mk
 include blackmagic/blackmagic.mk
+include tmc/tmc.mk
 
 # Define linker script file here
 LDSCRIPT= ld_eeprom_emu.ld
@@ -169,6 +170,7 @@ CSRC = $(STARTUPSRC) \
        $(LORASRC) \
        $(COMPRESSIONSRC) \
        $(BLACKMAGICSRC) \
+       $(TMCSRC) \
        qmlui/qmlui.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
@@ -212,6 +214,7 @@ INCDIR = $(STARTUPINC) $(KERNINC) $(PORTINC) $(OSALINC) \
          $(LORAINC) \
          $(COMPRESSIONINC) \
          $(BLACKMAGICINC) \
+         $(TMCINC) \
          qmlui \
          qmlui/hw \
          qmlui/app
