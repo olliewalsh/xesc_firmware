@@ -112,6 +112,7 @@ include libcanard/canard.mk
 include imu/imu.mk
 include blackmagic/blackmagic.mk
 include encoder/encoder.mk
+include tmc/tmc.mk
 
 ifeq ($(USE_LISPBM),1)
   include lispBM/lispbm.mk
