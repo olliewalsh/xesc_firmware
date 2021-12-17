@@ -146,6 +146,7 @@ CSRC = $(STARTUPSRC) \
        $(CANARDSRC) \
        $(IMUSRC) \
        $(BLACKMAGICSRC) \
+       $(TMCSRC) \
        qmlui/qmlui.c \
        $(ENCSRC) \
        conf_custom.c
@@ -190,6 +191,7 @@ INCDIR = $(STARTUPINC) $(KERNINC) $(PORTINC) $(OSALINC) \
          $(CANARDINC) \
          $(IMUINC) \
          $(BLACKMAGICINC) \
+         $(TMCINC) \
          qmlui \
          qmlui/hw \
          qmlui/app \
