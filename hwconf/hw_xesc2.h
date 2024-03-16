@@ -22,6 +22,7 @@
 
 
 bool tmc_error(void);
+void tmc6200_reset_faults(void);
 
 #define HW_NAME					"xESC2"
 
