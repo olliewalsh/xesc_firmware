@@ -48,8 +48,10 @@ void tmc6200_reset_faults(void);
 #define LED_RED_ON()			palSetPad(GPIOB, 1)
 #define LED_RED_OFF()			palClearPad(GPIOB, 1)
 
-
-
+// Shutdown pin
+#define HW_SHUTDOWN_GPIO		GPIOA
+#define HW_SHUTDOWN_PIN			6
+#define HW_SAMPLE_SHUTDOWN()	palReadPad(HW_SHUTDOWN_GPIO, HW_SHUTDOWN_PIN)
 
 /*
  * ADC Vector
@@ -147,8 +149,8 @@ void tmc6200_reset_faults(void);
 // COMM-port ADC GPIOs
 #define HW_ADC_EXT_GPIO			GPIOA
 #define HW_ADC_EXT_PIN			5
-#define HW_ADC_EXT2_GPIO		GPIOA
-#define HW_ADC_EXT2_PIN			6
+#define HW_ADC_EXT2_GPIO		GPIOC
+#define HW_ADC_EXT2_PIN			5
 
 // UART Peripheral
 #define HW_UART_DEV				SD3
@@ -205,8 +207,8 @@ void tmc6200_reset_faults(void);
 #define HW_SPI_PIN_SCK			5
 #define HW_SPI_PORT_MOSI		GPIOA
 #define HW_SPI_PIN_MOSI			7
-#define HW_SPI_PORT_MISO		GPIOA
-#define HW_SPI_PIN_MISO			6
+#define HW_SPI_PORT_MISO		GPIOC
+#define HW_SPI_PIN_MISO			5
 
 
 #define TMC6200_MOSI_GPIO		GPIOB
